@@ -117,20 +117,19 @@ body {
   top: 21em;
 }
 .title1 {
-  position: absolute;
+  position: relative;
   color: white;
   font-weight: bold;
   font-family: Roboto, "Helvetica Ne";
   font-size: 4rem;
-  left: 10rem;
-  /* margin-right: 13em; */
+  left: -7rem;
 }
 .separator {
-  position: absolute;
+  position: relative;
   width: 5px;
   background: white;
   height: 25rem;
-  left: 26rem;
+  left: 0rem;
   top: -9rem;
   border-radius: 10px;
 }
@@ -211,8 +210,8 @@ body {
 }
 .info {
   width: 800px;
-  position: absolute;
-  right: 11rem;
+  position: relative;
+  right: -7rem;
   top: -4rem;
 }
 .html p,
@@ -243,6 +242,15 @@ body {
   font-weight: bold;
   font-size: 22px;
   text-shadow: -2px -2px 2px rgba(255, 255, 255, 0.537);
+}
+.thre {
+  background-image: url(svg/portback1.svg);
+}
+.title2 {
+  color: white;
+}
+.fou {
+  background-image: url(svg/background-3.svg);
 }
 @keyframes move1 {
   0% {

@@ -2,7 +2,7 @@
   margin: 0px;
 }
 body {
-  overflow: auto;
+  overflow-x: hidden;
   font-family: Play, "Helvetica Ne";
 }
 .background {
@@ -11,7 +11,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  z-index: -1;
+  z-index: -2;
 }
 .one {
   background-image: url(svg/portback1.svg);
@@ -69,7 +69,7 @@ body {
   cursor: pointer;
 }
 #nav-bar ul li:hover {
-  font-size: 25px;
+  transform: scale(1.3);
   text-shadow: 0px 0px 3px rgba(55, 32, 154, 0.607);
 }
 #nav-bar ul :last-child {
@@ -240,7 +240,7 @@ body {
 }
 .highlight:hover {
   font-weight: bold;
-  font-size: 22px;
+  transform: scale(1.2);
   text-shadow: -2px -2px 2px rgba(255, 255, 255, 0.537);
 }
 .thre {
@@ -248,9 +248,85 @@ body {
 }
 .title2 {
   color: white;
+  position: relative;
+  left: 3em;
+  top: 1.3em;
+  font-size: 45px;
 }
-.fou {
-  background-image: url(svg/background-3.svg);
+.projects {
+  width: 100vw;
+  height: 100%;
+}
+.project1,
+.project2,
+.project3,
+.project4 {
+  position: relative;
+  width: 200px;
+  border-radius: 20px;
+  height: 18rem;
+  left: 20em;
+  top: 7em;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.723);
+  padding: 5px;
+  transition: transform 500ms ease-in-out;
+}
+.project2 {
+  left: 37em;
+  top: -11.5em;
+}
+.project3 {
+  left: 53em;
+  top: -15.5em;
+}
+.project4 {
+  left: 69em;
+  top: -33.9em;
+}
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.projectbackground,
+.projectbackground2 {
+  /* background-image: url(images/youtubeima.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  background: rgb(255, 204, 0);
+  width: 100%;
+  height: 50%;
+  border-radius: 17px 17px 17px 17px;
+  margin: 0px;
+  z-index: -1;
+}
+.heading,
+.heading2 {
+  color: black;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  padding-top: 55px;
+  text-shadow: 0px 3px 3px rgb(21, 20, 20);
+}
+.heading2 {
+  font-size: 60px;
+  padding-top: 33px;
+  text-shadow: 0px 5px 5px rgb(21, 20, 20);
+}
+.info1,
+.info2 {
+  color: white;
+  margin-top: 35px;
+  font-size: 20px;
+  padding: 0px 12px;
+  text-align: center;
+}
+.info2 {
+  margin-top: 45px;
 }
 @keyframes move1 {
   0% {
